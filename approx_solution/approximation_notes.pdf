@@ -1,0 +1,9 @@
+1. Explain strategy (greedy, anytime, etc.).
+
+2. Discuss the analytical runtime analysis of your
+approximation. Recall it must run in polynomial time.
+
+3. Program performs “reasonably well” on test cases on Gradescope
+
+4. run_test_cases.sh showscases at least 3 test cases (1 with nonoptimal results)
+
