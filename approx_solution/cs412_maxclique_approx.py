@@ -1,6 +1,5 @@
 import sys
 import random
-from collections import defaultdict
 
 
 def main():
