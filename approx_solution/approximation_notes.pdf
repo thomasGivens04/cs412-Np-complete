@@ -1,9 +1,26 @@
 1. Explain strategy (greedy, anytime, etc.).
+- I used a greedy randomized approach to solve the max clique problem.
+I start with a randomly selected vertex and attempt to grow the clique by
+adding a random vertex that is connected to all the other vertices already
+in the clique. If there are multiple vertices that are available to be added
+to the clique I randomly select one and continue from there. When the max
+clique is found it is stored and then I repeat the greedy process about
+300 times to find the largest max clique. Since we repeat the process
+multiple times it is an anytime style algorithm that will get a better
+answer the more times we repeat the greedy process.
 
 2. Discuss the analytical runtime analysis of your
 approximation. Recall it must run in polynomial time.
+- I have two main methods for my approach, the first one is reading the graph.
+Reading the graph processes each edge and puts them in an adjacency list, the
+time required for this is O(e) e being the number of edges, so the runtime for
+reading the graph is constant. The second method is my greedy approach, the
+runtime of my greedy approach is O(n^2) because it has a loop. So the total
+runtime of my approach is O(e) + O(n^2) which simplifies to just O(n^2).
 
 3. Program performs “reasonably well” on test cases on Gradescope
+- My code passed all the gradescope tests.
 
 4. run_test_cases.sh showscases at least 3 test cases (1 with nonoptimal results)
+- My run_test_cases.sh file has 3 test cases and 1 nonoptimal test case.
 
