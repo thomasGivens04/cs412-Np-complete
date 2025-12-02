@@ -1,0 +1,47 @@
+$ ./run_test_cases.sh 
+Running all Max Clique exact test cases...
+--------------------------------------------------
+Running on: test_cases/test_2communities.txt
+v1 v2 v3 v4 v5
+Runtime: 2.00 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_3clique.txt
+a b c
+Runtime: 1.00 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_3hard.txt
+h c j e
+Runtime: 0.00 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_5clique.txt
+a b c d e
+Runtime: 0.00 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_7clique.txt
+a b c d e f g
+Runtime: 2.05 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_hiddenclique.txt
+v1 v2 v3 v4
+Runtime: 126.96 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_largeclique.txt
+a b c
+Runtime: 2.01 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_medium1.txt
+e f g
+Runtime: 0.00 milliseconds
+
+--------------------------------------------------
+Running on: test_cases/test_28_complete.txt
+(This is a large test case, taking around 30 minutes to complete.)
+v1 v2 v3 v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15 v16 v17 v18 v19 v20 v21 v22 v23 v24 v25 v26 v27 v28
+Runtime: 34.0 minutes and 20.907408237457275 seconds

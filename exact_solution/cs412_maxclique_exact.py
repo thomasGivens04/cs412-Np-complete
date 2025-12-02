@@ -67,8 +67,16 @@ def main():
     print(" ".join(clique))
 
     end = time.time()
-    print(f"Runtime: {end - start} seconds")
-
+    endSeconds = end - start
+    endMinutes = endSeconds // 60
+    remainingSeconds = endSeconds % 60
+    if endMinutes >= 1:
+        print(f"Runtime: {endMinutes} minutes and {remainingSeconds:.2f} seconds")
+    elif endSeconds < 1:
+        endMilliseconds = endSeconds * 1000
+        print(f"Runtime: {endMilliseconds:.8f} milliseconds")
+    else:
+        print(f"Runtime: {endSeconds:.4f} seconds")
 
 
 if __name__ == "__main__":
