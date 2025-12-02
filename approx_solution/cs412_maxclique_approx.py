@@ -7,7 +7,7 @@ def main():
     start = time.time()   # start timing
 
     vertices, adj = read_graph()
-    best = max_clique_greedy_approx(vertices, adj, repeats=1)
+    best = max_clique_greedy_approx(vertices, adj, repeats=300)
 
     # print clique like exact solver
     print(" ".join(best))
@@ -76,7 +76,7 @@ def greedy_approach(vertices, adj):
     return c
 
 
-def max_clique_greedy_approx(vertices, adj, repeats=1):
+def max_clique_greedy_approx(vertices, adj, repeats=300):
     best = set()
     for _ in range(repeats):
         c = greedy_approach(vertices, adj)
