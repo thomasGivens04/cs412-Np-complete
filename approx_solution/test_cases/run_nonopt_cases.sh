@@ -21,3 +21,6 @@ run_test() {
 }
 
 run_test "test_hiddenclique.txt"  # non-optimal case
+
+# Exact solution got a clique of size 4
+# Approx solution got a clique of size 3

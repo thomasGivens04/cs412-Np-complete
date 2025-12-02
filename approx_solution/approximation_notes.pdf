@@ -15,8 +15,9 @@ approximation. Recall it must run in polynomial time.
 Reading the graph processes each edge and puts them in an adjacency list, the
 time required for this is O(e) e being the number of edges, so the runtime for
 reading the graph is constant. The second method is my greedy approach, the
-runtime of my greedy approach is O(n^2) because it has a loop. So the total
-runtime of my approach is O(e) + O(n^2) which simplifies to just O(n^2).
+worst case runtime of my greedy approach is O(n^3) because it has a loop
+with a set comparison. So the total runtime of my approach is O(e) + O(n^3)
+which simplifies to just O(n^3).
 
 3. Program performs “reasonably well” on test cases on Gradescope
 - My code passed all the gradescope tests.

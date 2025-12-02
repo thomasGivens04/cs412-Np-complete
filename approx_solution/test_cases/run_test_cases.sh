@@ -23,4 +23,4 @@ run_test() {
 run_test "case1.txt"
 run_test "case2.txt"
 run_test "case3.txt"
-run_test "case4.txt"  # non-optimal case
+run_test "test_hiddenclique.txt" # non-optimal test case
