@@ -93,14 +93,14 @@ Or run the test script to run all files contained within /test_cases
 
 
 -----------------------
-7. Test Cases & Results
+6. Test Cases & Results
 -----------------------
 
 Below is a complete list of all test graphs used in my run script.
 Each is designed to test different structural properties.
 
 ###
-7.1  test_2communities.txt
+6.1  test_2communities.txt
 ###
 
 Description:
@@ -114,10 +114,10 @@ Expected output:
     A clique of size 5.
     My solver returns:  v1 v2 v3 v4 v5
 
-Runtime: ~2 ms
+Runtime: ~3 ms
 
 ###
-7.2  test_3clique.txt
+6.2  test_3clique.txt
 ###
 
 Description:
@@ -129,7 +129,7 @@ Expected output:
 Runtime: ~1 ms
 
 ###
-7.3  test_3hard.txt
+6.3  test_3hard.txt
 ###
 
 Description:
@@ -145,7 +145,7 @@ Expected output:
 Runtime: ~1 ms
 
 ###
-7.4  test_5clique.txt
+6.4  test_5clique.txt
 ###
 
 Description:
@@ -157,7 +157,7 @@ Expected output:
 Runtime: <1 ms
 
 ###
-7.5  test_7clique.txt
+6.5  test_7clique.txt
 ###
 
 Description:
@@ -169,7 +169,7 @@ Expected output:
 Runtime: <1 ms
 
 ###
-7.6  test_hiddenclique.txt
+6.6  test_hiddenclique.txt
 ###
 
 Description:
@@ -184,7 +184,7 @@ Expected output:
 Runtime: ~127 ms  
 
 ###
-7.7  test_largeclique.txt
+6.7  test_largeclique.txt
 ###
 
 Description:
@@ -197,7 +197,7 @@ Expected output:
 Runtime: ~2 ms
 
 ###
-7.8  test_medium1.txt
+6.8  test_medium1.txt
 ###
 
 Description:
@@ -210,7 +210,7 @@ Expected output:
 Runtime: ~1 ms
 
 ###
-7.9  test_28_complete.txt
+6.9  test_28_complete.txt
 ###
 
 Description:
@@ -236,7 +236,7 @@ because the solver must check over 268 million subsets.
 
 
 --------------------
-8. Runtime Analytics
+7. Runtime Analytics
 --------------------
 
 The solver enumerates every subset of vertices that exists in
@@ -249,7 +249,7 @@ Total time is:
 
     T(n) = Θ(2^n * n^2)
 
-Practical measurements:
+Runtime measurements:
 
     n = 12 -> ~2 ms  
     n = 18 -> ~127 ms
@@ -260,7 +260,7 @@ Exponential growth is shown clearly in the size of the input.
 
 
 ----------
-9. Sources
+8. Sources
 ----------
 
 I only used basic python and itertools to create the solver.
