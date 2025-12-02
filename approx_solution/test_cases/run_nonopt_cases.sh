@@ -20,4 +20,4 @@ run_test() {
     echo ""
 }
 
-run_test "case4.txt"  # non-optimal case
+run_test "test_hiddenclique.txt"  # non-optimal case
