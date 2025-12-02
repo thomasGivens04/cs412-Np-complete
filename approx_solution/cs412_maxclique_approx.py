@@ -68,7 +68,7 @@ def greedy_approach(vertices, adj):
 
 
 # Repeats the greedy approach multiple times to improve result
-def max_clique_greedy_approx(vertices, adj, repeats=200):
+def max_clique_greedy_approx(vertices, adj, repeats=300):
     best = set()
     for _ in range(repeats):
         # builds a clique
